@@ -1,0 +1,16 @@
+/*
+ * Created on Wed May 13 2020
+ * Author: Gio Justiniano
+ * More info: https://github.com/giomikee/
+ *
+ * Copyright (c) 2020
+ */
+body {
+	text-align: center;
+	font-family: 'VT323', monospace;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
