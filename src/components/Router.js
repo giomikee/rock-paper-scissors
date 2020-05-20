@@ -7,7 +7,8 @@
  */
 
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
+import Header from './Header';
 import GameMode from './GameMode';
 import App from './App';
 import NotFound from './NotFound';
@@ -15,6 +16,9 @@ import NotFound from './NotFound';
 export default function Router() {
 	return (
 		<BrowserRouter basename={process.env.PUBLIC_URL}>
+			<Link to='/' className='header-link'>
+				<Header />
+			</Link>
 			<Switch>
 				<Route exact path='/' component={GameMode} />
 				<Route path='/play/:gameId' component={App} />

@@ -16,6 +16,12 @@ h4 {
 	font-family: 'Bungee Shade', cursive;
 }
 
+.header-link,
+.header-link:hover {
+	color: unset;
+	text-decoration: none;
+}
+
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 		monospace;
