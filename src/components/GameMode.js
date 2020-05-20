@@ -9,7 +9,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Col, Row, Card, Button } from 'react-bootstrap';
-import { HOME } from '../constants';
 
 export default class GameMode extends Component {
 	static propTypes = {
@@ -18,7 +17,7 @@ export default class GameMode extends Component {
 		})
 	};
 	selectGameMode = (gameId) => {
-		this.props.history.push(`${HOME}/play/${gameId || 'solo'}`);
+		this.props.history.push(`/play/${gameId || 'solo'}`);
 	};
 	render() {
 		return (
