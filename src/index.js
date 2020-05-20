@@ -12,18 +12,16 @@ import WebFont from 'webfontloader';
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/index.css';
-import Header from './components/Header';
 import Router from './components/Router';
 import * as serviceWorker from './serviceWorker';
 
 WebFont.load({
-	google: { families: ['VT323', 'monospace'] }
+	google: { families: ['VT323', 'monospace', 'Bungee Shade', 'cursive'] }
 });
 
 ReactDOM.render(
 	<React.StrictMode>
 		<Container>
-			<Header />
 			<Router />
 		</Container>
 	</React.StrictMode>,
